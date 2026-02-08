@@ -7,12 +7,28 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
+<script>
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.nav-toggle');
+
+  toggle.addEventListener('click', () => {
+    const collapsed = header.classList.toggle('is-collapsed');
+    toggle.setAttribute('aria-expanded', String(!collapsed));
+  });
+</script>
+
+
 <body>
   <header class="site-header">
     <nav class="container nav">
       <a class="brand" href="#about">Caleb Short</a>
 
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="true" aria-controls="navLinks">
+        <span class="chev">▾</span>
+      </button>
+
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -60,51 +76,6 @@
       <h2>Projects</h2>
 
       <div class="projects-grid">
-        <div class="project-card">
-          <img src="images/beast.png" alt="Project 2" class="project-img" />
-          <h3>Gorilla Mode — AI-Integrated Android Assistant App</h3>
-
-          <p class="tags">Android • Java • APIs • OkHttp • UI Design</p>
-
-          <p class="project-description">
-            A semester-long Android application featuring multi-screen navigation and AI-powered responses.
-          </p>
-
-            <ul class="project-highlights">
-              <li>Designed and implemented fragment-based navigation across multiple screens</li>
-              <li>Integrated AI responses using API requests with OkHttp</li>
-              <li>Managed dynamic UI updates and scrollable response handling</li>
-              <li>Coordinated team roles and contributed heavily throughout the semester-long development process</li>
-            </ul>
-            <p class="project-links">
-              <a href="https://drive.google.com/file/d/1MwWbv1Mc6c4VuT9pUNngtoOkyaXHVLtV/view?usp=sharing" target="_blank">
-              View Demo Video
-              </a>
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-          <img src="images/maze.png" alt="Gyroscope-Controlled Maze Game" class="project-img" />
-
-          <h3>Gyroscope Controlled Maze Game</h3>
-
-          <p class="tags">C • Unix • ncurses • Controller Input • Procedural Generation</p>
-
-          <p class="project-description">
-            A terminal-based C application featuring procedurally generated mazes controlled via PS4 gyroscopic input.
-          </p>
-
-          <ul class="project-highlights">
-            <li>Implemented real-time rendering using ncurses in a Unix environment</li>
-            <li>Integrated PS4 controller gyroscope input for tilt-based navigation</li>
-            <li>Designed collision detection and boundary handling for dynamic maze layouts</li>
-            <li>Generated randomized mazes with adjustable difficulty (1–100 obstacle density)</li>
-            <li>Developed gravity-based movement smoothing requiring active tilt control</li>
-          </ul>
-
-        </div>
 
         <div class="project-card">
 
@@ -156,6 +127,53 @@
           <p class="project-links">
             <a href="https://github.com/Caleb-Short/Java-Plotter" target="_blank">View on GitHub</a>
           </p>
+
+        </div>
+
+
+        <div class="project-card">
+          <img src="images/beast.png" alt="Project 2" class="project-img" />
+          <h3>Gorilla Mode — AI-Integrated Android Assistant App</h3>
+
+          <p class="tags">Android • Java • APIs • OkHttp • UI Design</p>
+
+          <p class="project-description">
+            A semester-long Android application featuring multi-screen navigation and AI-powered responses.
+          </p>
+
+            <ul class="project-highlights">
+              <li>Designed and implemented fragment-based navigation across multiple screens</li>
+              <li>Integrated AI responses using API requests with OkHttp</li>
+              <li>Managed dynamic UI updates and scrollable response handling</li>
+              <li>Coordinated team roles and contributed heavily throughout the semester-long development process</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://drive.google.com/file/d/1MwWbv1Mc6c4VuT9pUNngtoOkyaXHVLtV/view?usp=sharing" target="_blank">
+              View Demo Video
+              </a>
+            </p>
+
+        </div>
+
+        <div class="project-card">
+
+          <img src="images/maze.png" alt="Gyroscope-Controlled Maze Game" class="project-img" />
+
+          <h3>Gyroscope Controlled Maze Game</h3>
+
+          <p class="tags">C • Unix • ncurses • Controller Input • Procedural Generation</p>
+
+          <p class="project-description">
+            A terminal-based C application featuring procedurally generated mazes controlled via PS4 gyroscopic input.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Implemented real-time rendering using ncurses in a Unix environment</li>
+            <li>Integrated PS4 controller gyroscope input for tilt-based navigation</li>
+            <li>Designed collision detection and boundary handling for dynamic maze layouts</li>
+            <li>Generated randomized mazes with adjustable difficulty (1–100 obstacle density)</li>
+            <li>Developed gravity-based movement smoothing requiring active tilt control</li>
+          </ul>
 
         </div>
 
