@@ -8,15 +8,28 @@
 </head>
 
 <body>
-  <header>
+  <header class="site-header">
     <nav class="container nav">
-      <ul>
-        <li><a href="#about">About Me</a></li>
+      <a class="brand" href="#about">Caleb Short</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#coursework">Coursework</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a class="nav-cta" href="docs/Caleb Short Recommendation Letter.pdf" target="_blank" rel="noopener noreferrer">
+          Recommendation
+        </a>
+
+      </div>
     </nav>
   </header>
+
 
   <section id="about" class="section">
     <div class="container about">
@@ -27,7 +40,7 @@
         <h1>Caleb Short</h1>
 
         <p class="subtitle">
-          I’m a software engineering student at Iowa State currently enrolled in SE 3190
+          Software engineering student building strong foundations in writing clean and practical code through coursework and personal projects.
         </p>
 
         <div class="buttons">
@@ -38,38 +51,343 @@
     </div>
   </section>
 
+  <div class="section-divider"></div>
+
+
   <section id="projects" class="section alt">
     <div class="container">
       <h2>Projects</h2>
 
       <div class="projects-grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1" class="project-img" />
-          <h3>Project 1 — Portfolio Mockup</h3>
-          <p class="tags">HTML • CSS</p>
-          <p>
-            A simple personal portfolio layout.
+          <img src="images/beast.png" alt="Project 2" class="project-img" />
+          <h3>Gorilla Mode — AI-Integrated Android Assistant App</h3>
+
+          <p class="tags">Android • Java • APIs • OkHttp • UI Design</p>
+
+          <p class="project-description">
+            A semester-long Android application featuring multi-screen navigation and AI-powered responses.
           </p>
+
+            <ul class="project-highlights">
+              <li>Designed and implemented fragment-based navigation across multiple screens</li>
+              <li>Integrated AI responses using API requests with OkHttp</li>
+              <li>Managed dynamic UI updates and scrollable response handling</li>
+              <li>Coordinated team roles and contributed heavily throughout the semester-long development process</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://drive.google.com/file/d/1MwWbv1Mc6c4VuT9pUNngtoOkyaXHVLtV/view?usp=sharing" target="_blank">
+              View Demo Video
+              </a>
+            </p>
+
         </div>
 
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 2" class="project-img" />
-          <h3>Project 2 — Weltzerstörer</h3>
-          <p class="tags">Java • UI</p>
-          <p>
-            Placeholder for my next project. Ill swap this text with something once I pick one.
+
+          <img src="images/maze.png" alt="Gyroscope-Controlled Maze Game" class="project-img" />
+
+          <h3>Gyroscope-Controlled Maze Game</h3>
+
+          <p class="tags">C • Unix • ncurses • Controller Input • Procedural Generation</p>
+
+          <p class="project-description">
+            A terminal-based C application featuring procedurally generated mazes controlled via PS4 gyroscopic input.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Implemented real-time rendering using ncurses in a Unix environment</li>
+            <li>Integrated PS4 controller gyroscope input for tilt-based navigation</li>
+            <li>Designed collision detection and boundary handling for dynamic maze layouts</li>
+            <li>Generated randomized mazes with adjustable difficulty (1–100 obstacle density)</li>
+            <li>Developed gravity-based movement smoothing requiring active tilt control</li>
+          </ul>
+
+        </div>
+
+        <div class="project-card">
+
+          <img src="images/klaus.png" alt="Klaus Local AI Assistant" class="project-img" />
+
+
+          <h3>Klaus — Local AI Assistant Framework</h3>
+
+          <p class="tags">Python • Gradio • Ollama • Local LLM • Modular Design • Git</p>
+
+          <p class="project-description">
+            A fully local AI assistant built in Python using Gradio and Ollama, featuring modular tools and bilingual capabilities.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Developed a modular architecture including translator, notekeeper, and code helper components</li>
+            <li>Integrated local LLM inference using Ollama (Mistral) with structured prompt routing</li>
+            <li>Built a Gradio based UI for interactive text based conversations</li>
+            <li>Implemented bilingual responses (English/German) and tool-based functionality</li>
+            <li>Designed for extensibility and future model experimentation</li>
+          </ul>
+
+          <p class="project-links">
+            <a href="https://github.com/Caleb-Short/klaus" target="_blank">View on GitHub</a>
+          </p>
+
+        </div>
+
+        <div class="project-card">
+
+          <img src="images/plotter.png" alt="Java Plotter" class="project-img" />
+
+          <h3>Structured File Parser & Object Model</h3>
+
+          <p class="tags">Java • File I/O • Parsing • OOP • ArrayLists</p>
+
+          <p class="project-description">
+            A Java application that reads structured text files, parses data into custom object models, and supports downstream processing and visualization.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Implemented file reading and parsing logic using Java I/O utilities</li>
+            <li>Modeled structured data using custom classes and ArrayLists</li>
+            <li>Converted raw text input into validated, typed objects</li>
+            <li>Handled formatting inconsistencies and edge cases during parsing</li>
+            <li>Produced structured output to support plotting and further analysis</li>
+          </ul>
+
+          <p class="project-links">
+            <a href="https://github.com/Caleb-Short/Java-Plotter" target="_blank">View on GitHub</a>
+          </p>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="section-divider"></div>
+
+      
+      <!-- Skills-->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <p>
+              Java • C • C++ • Python • JavaScript • Kotlin •
+              HTML • CSS•
+              Verilog • VHDL
+            </p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <p>
+              Android • Gradio • Ollama • ncurses<br>
+              Git • GitHub •
+              Eclipse • VS Code • CLion • Quartus •
+              AutoCAD
+            </p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Concepts & Engineering</h3>
+            <p>
+              Object-Oriented Programming<br>
+              File I/O & Data Parsing<br>
+              API Integration<br>
+              Data Structures<br>
+              Procedural Generation<br>
+              Hardware Prototyping<br>
+              3D Printing & CNC Machining
+            </p>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+
+      <!-- Experience-->
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <img src="images/porter.png" alt="Porter Communications Logo" class="experience-logo">
+            <div>
+              <h3>IT Intern — Porter Communications</h3>
+              <p class="experience-meta">March 2025 – August 2025</p>
+            </div>
+          </div>
+
+          <ul>
+            <li>Installed and configured security camera and networking systems for business clients</li>
+            <li>Troubleshot hardware and network issues (routers, printers, security devices)</li>
+            <li>Assisted with system diagnostics and on site technical support</li>
+            <li>Developed a basic Shopify based website for a local business client</li>
+          </ul>
+
+          <p class="company-link">
+            <a href="https://portercomms.com" target="_blank" rel="noopener noreferrer">
+              Visit Company Website →
+            </a>
           </p>
         </div>
-      </div>
+
+
+        <div class="experience-item">
+          <h3>Barista — Cup of Joe</h3>
+          <p class="experience-meta">August 2023 – January 2024</p>
+          <ul>
+            <li>Managed customer orders in a high volume environment</li>
+            <li>Handled end of day closing procedures and cash balancing</li>
+            <li>Maintained operational efficiency and cleanliness standards</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Pizza Cook — Urban Pie</h3>
+          <p class="experience-meta">March 2021 – August 2023</p>
+          <ul>
+            <li>Worked in a fast paced kitchen environment under time constraints</li>
+            <li>Prepared and assembled orders while maintaining quality standards</li>
+            <li>Assisted with inventory restocking and nightly closing procedures</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <div class="section-divider"></div>
+
+
+      <!-- Coursework-->
+      <section id="coursework" class="coursework-section">
+        <h2>Relevant Coursework</h2>
+
+        <div class="coursework-grid">
+
+          <div class="coursework-category">
+            <h3>Computer Science</h3>
+            <ul>
+              <li>Construction of User Interfaces(SE 319)</li>
+              <li>Object-Oriented Analysis and Design(COM S 3620)</li>
+              <li>Data Structures (COM S 228)</li>
+              <li>Object-Oriented Programming(COM S 227)</li>
+              <li>Problem Solving in Software Engineering 1 & 2(SE 185 & 186)</li>
+              <li>Discrete Computational Structures(COM S 230)</li>
+            </ul>
+          </div>
+
+          <div class="coursework-category">
+            <h3>Computer Engineering</h3>
+            <ul>
+              <li>Digital Logic & Computer Engineering (CPRE 281)</li>
+              <li>Verilog/VHDL Design</li>
+            </ul>
+          </div>
+
+          <div class="coursework-category">
+            <h3>Engineering Design</h3>
+            <ul>
+              <li>Project Lead The Way (PLTW) Engineering Program</li>
+              <li>AutoCAD Modeling & Mechanical Prototyping</li>
+              <li>3D Printing & CNC Machining</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+
+      <!--Langauge interests-->
+      <section class="languages-section">
+        <h2>Languages & Interests</h2>
+
+        <div class="languages-grid">
+
+          <div class="language-category">
+            <h3>Spoken Languages</h3>
+            <p>
+              English (Native)<br>
+              German (Intermediate, currently enrolled)<br>
+              Norwegian (Self-study)
+            </p>
+          </div>
+
+          <div class="language-category">
+            <h3>Technical Interests</h3>
+            <p>
+              Artificial Intelligence & Local LLMs<br>
+              Systems Programming<br>
+              Engineering Design & Prototyping<br>
+              Hardware & Software Integration<br>
+              International Technology & Nordic Innovation
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
     </div>
   </section>
+
+  <div id="imgModal" class="img-modal" aria-hidden="true">
+    <div class="img-modal-backdrop"></div>
+    <img id="imgModalContent" alt="" />
+  </div>
+
+  <script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgModalContent");
+
+  document.querySelectorAll(".project-img").forEach(img => {
+    img.style.cursor = "zoom-in";
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modalImg.alt = img.alt || "Project image";
+      modal.classList.add("show");
+      modal.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  modal.addEventListener("click", () => {
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    modalImg.src = "";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      modal.classList.remove("show");
+      modal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+    }
+  });
+</script>
+
+
 
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
       <p>
-        Email: <a class="link" href="mailto:fox531@iastate.edu">fox531@iastate.edu</a>
+        Email: <a class="link" href="mailto:fox531@iastate.edu">fox531@iastate.edu.</a>
       </p>
+      <p>
+        Alternative: <a class="link" href="mailto:caleb.short531se@gmail.com">caleb.short531se@gmail.com
+      </p>
+      <p> 
+        Phone Number: +1 (337) 353-9509
+      </p>
+
     </div>
   </section>
 
