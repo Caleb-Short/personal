@@ -7,16 +7,6 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
-<script>
-  const header = document.querySelector('.site-header');
-  const toggle = document.querySelector('.nav-toggle');
-
-  toggle.addEventListener('click', () => {
-    const collapsed = header.classList.toggle('is-collapsed');
-    toggle.setAttribute('aria-expanded', String(!collapsed));
-  });
-</script>
-
 
 <body>
   <header class="site-header">
@@ -362,6 +352,16 @@
     <div class="img-modal-backdrop"></div>
     <img id="imgModalContent" alt="" />
   </div>
+
+  <script>
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.nav-toggle');
+
+  toggle.addEventListener('click', () => {
+    const collapsed = header.classList.toggle('is-collapsed');
+    toggle.setAttribute('aria-expanded', String(!collapsed));
+  });
+</script>
 
   <script>
   const modal = document.getElementById("imgModal");
